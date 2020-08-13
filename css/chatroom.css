@@ -4,7 +4,7 @@ html {
 body {
     background: #352f5b;
     font-family: 'Josefin Sans', sans-serif;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .main-page {
     max-width: 1200px;
@@ -451,9 +451,7 @@ input[type="password"] {
     color: white;
     border: none;  
 }
-input[type="email"] {
-    padding-right: 138px;
-}
+
 input[type="email"]:focus,
 input[type="password"]:focus {
     border-radius: 0;
