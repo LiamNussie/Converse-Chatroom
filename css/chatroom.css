@@ -11,7 +11,7 @@ body {
 }
 .slide-bar {
     background-color: #161235;
-    max-width: 300px;
+    max-width: 280px;
     height: 100vh;
     position: fixed;
 }
@@ -124,7 +124,7 @@ body {
 }
 .logout-icon {
     cursor: pointer;
-    margin-right: 220px;
+    margin-right: 200px;
 }
 .fa-sign-out-alt,
 .fa-lightbulb,
