@@ -11,7 +11,7 @@ body {
 }
 .slide-bar {
     background-color: #161235;
-    max-width: 350px;
+    max-width: 300px;
     height: 100vh;
     position: fixed;
 }
