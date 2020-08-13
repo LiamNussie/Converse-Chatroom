@@ -451,9 +451,6 @@ input[type="password"] {
     color: white;
     border: none;  
 }
-input[type="email"] {
-    padding-right: 90px !important;
-}
 input[type="email"]:focus,
 input[type="password"]:focus {
     border-radius: 0;
@@ -589,8 +586,11 @@ input[type="password"]::placeholder {
 }
 .signup-window {
     transform: translate(500%, -124%);
+    margin: auto;
 }
-
+.login-window {
+    margin: auto;
+}
 
 .forms {
     /* display: none; */
