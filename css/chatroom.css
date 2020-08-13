@@ -451,6 +451,9 @@ input[type="password"] {
     color: white;
     border: none;  
 }
+input[type="email"] {
+    padding-right: 95px !important;
+}
 input[type="email"]:focus,
 input[type="password"]:focus {
     border-radius: 0;

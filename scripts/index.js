@@ -80,7 +80,6 @@ signupForm.addEventListener('submit', e => {
     auth.createUserWithEmailAndPassword(email, password)
     .then(cred => {
         signupForm.reset();
-        body.style.overflow = 'scroll';
     })
 });
 
@@ -110,7 +109,6 @@ loginForm.addEventListener('submit', e => {
     .then(cred => {
         console.log(cred.user.uid);
         loginForm.reset();
-        body.style.overflow = 'scroll';
     });
 
     auth.onAuthStateChanged(user => {
