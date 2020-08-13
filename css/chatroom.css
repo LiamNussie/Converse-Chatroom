@@ -445,7 +445,7 @@ h1,
 
 input[type="email"],
 input[type="password"] {
-    padding-right: 140px;
+    padding-right: 120px;
     border-radius: 0;
     background: rgb(85, 85, 85);
     color: white;
