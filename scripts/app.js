@@ -255,7 +255,7 @@ dayMode.addEventListener('click', e => {
         tempSwitch.style.animation = 'fadeBounce2 1.5s linear 1'
         updateText.style.color = '#352f5b'
         userIcon.style.color = '#352f5b'
-        bars.style.color = 'white'
+        bars.style.color = '#352f5b'
         
 });
 
