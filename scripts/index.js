@@ -87,9 +87,9 @@ logout.addEventListener('click', e => {
     e.preventDefault();
     auth.signOut().then(() => {
         console.log('user logged out');
+        scrollTo(0,0)
         homePage.style.display = 'none';
         forms.style.display = 'block'; 
-        scrollTo(0,0)
         slideBar.style.transform = 'translateX(-100%)';    
     });
 });
