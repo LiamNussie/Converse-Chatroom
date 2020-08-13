@@ -254,6 +254,9 @@ dayMode.addEventListener('click', e => {
         nameLogoD.style.display = 'block'
         tempSwitch.style.animation = 'fadeBounce2 1.5s linear 1'
         updateText.style.color = '#352f5b'
+        userIcon.style.color = '#352f5b'
+        bars.style.color = 'white'
+        
 });
 
 darkMode.addEventListener('click', e => {
@@ -287,6 +290,7 @@ darkMode.addEventListener('click', e => {
         logoutIcon.style.color = 'white'
         logoutText.style.color = 'white'
         darkMode.style.color = 'white'
+        nameLogox.style.display = 'block'
 });
 
 
