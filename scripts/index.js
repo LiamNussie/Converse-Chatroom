@@ -36,7 +36,6 @@ const forms = document.querySelector('.forms');
 const loginError = document.querySelector('.login-error');
 const status = document.querySelector('.fa-circle');
 const profMail = document.querySelector('.prof-mail');
-const body = document.querySelector('body');
 
 
 // listen for auth status changes
@@ -45,7 +44,6 @@ auth.onAuthStateChanged(user => {
     if(user) {
         homePage.style.display = 'block';
         forms.style.display = 'none';
-        
         // profMail.innerHTML = `${userEmail}`;
 
         // firebase.storage().ref('users/' + user.uid + '/profile.jpg').getDownloadURL()
@@ -109,6 +107,7 @@ loginForm.addEventListener('submit', e => {
     .then(cred => {
         console.log(cred.user.uid);
         loginForm.reset();
+     
     });
 
     auth.onAuthStateChanged(user => {
