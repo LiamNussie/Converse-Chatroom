@@ -596,7 +596,7 @@ input[type="password"]::placeholder {
 }
 
 .forms {
-    /* display: none; */
+    overflow: hidden;
     margin: auto;
     text-align: center;
 }
