@@ -1,0 +1,262 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Liam Chat</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/chatroom.css">
+    
+    </head>
+
+    <body>
+
+
+
+
+          
+
+
+
+        <div class="forms">
+
+            <div class="name-logo text-center my-3">
+                <span class="text-center my-3 mx-auto site-name">Converse</span>
+                <span class="icon"><i class="fas fa-comment-dots"></i></span>
+            </div>
+
+            <div class="login-window">
+                <div class="container login-boxx">
+                    <p>MEMBER LOGIN</p>
+                    <form class="login my-3" id="login-form">
+                        <div class="input-group field1">
+                            <span><input type="email" class="form-control" id="login-email" placeholder="Email Address" required></span>
+                            <span><i class="fas fa-user-alt"></i></span>
+                        </div>
+        
+                        <div class="input-group">
+                            <span><input type="password" class="form-control" id="login-password" placeholder="Password" required></span>
+                            <span><i class="fas fa-lock"></i></span>
+                        </div>
+                        <div class="login-error">Email or Password invalid!</div>
+                        <div><input type="submit" class="login-btnx btn" value="LOG IN"></div>
+                    </form>
+                        <p class="forgot">Forgot Password? Click Here</p>
+                </div>
+                        <div class="signup-btnx btn">REGISTER</div>
+            </div>
+            
+        
+        <br><br><br>
+            <div class="signup-window">
+                <div class="container signup-boxx">
+                    <p>MEMBER SIGN UP</p>
+                    <form class="signup my-3" id="signup-form">
+                        <div class="input-group field1">
+                            <span><input type="email" class="form-control" id="signup-email" placeholder="Email Address" required></span>
+                            <span><i class="fas fa-user-alt"></i></span>
+                        </div>
+        
+                        <div class="input-group">
+                            <span><input type="password" class="form-control" id="signup-password" placeholder="Password" required></span>
+                            <span><i class="fas fa-lock"></i></span>
+                        </div>
+                        <div><input type="submit" class="login-btnx btn" value="CONTINUE"></div>
+                    </form>
+                        <!-- <div class="login-btn btn">CONTINUE</div> -->
+                        <p class="forgot">Forgot Password? Click Here</p>
+                </div>
+                        <div class="signup-btnx btn back-login">BACK TO LOGIN</div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="home-page">
+
+            <div class="nav-bar">
+                <i class="fas fa-bars"></i>
+            </div>
+    
+            <div class="scroll-btns">
+                <div class="scroll-up">
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+                <div class="scroll-down">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+            </div>
+        
+            <div class="slider-wrapper">
+                <div class="slide-bar container mx-0">
+                    <div class="slider-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="top-area">
+                        <!-- <img src="img/5.jpg" class="img"> -->
+                        <i class="fas fa-user"></i>
+                        <div class="profile-name"></div>
+                        <div class="prof-mail"></div>
+                    </div>
+    
+                    <div class="middle-area">
+                        <div class="room-line">
+                            <span><i class="fas fa-users"></i></span>
+                            <span class="users rooms-temp">Rooms</span>
+                        </div>
+                        <div class="room-alt">
+                            <div class="general-line">
+                                <span><i class="fas fa-globe" id="general"></i></span>
+                                <span id="general" class="globe globex rooms-temp">General</span> 
+                            </div>
+                            <div class="sports-line">
+                                <span><i class="fas fa-futbol" id="sports"></i></span>
+                                <span id="sports" class="futbol futbolx rooms-temp">Sports</span>
+                            </div>
+                            <div class="music-line">
+                                <span><i class="fas fa-music" id="music"></i></span>
+                                <span id="music" class="musicx rooms-temp">Music</span>
+                            </div>
+                            <div class="gaming-line">
+                                <span><i class="fas fa-gamepad rm" id="gaming"></i></span>
+                                <span id="gaming" class="gamepad gamepadx rooms-temp">Gaming</span>
+                            </div>
+                            <div class="lifestyle-line">
+                                <span><i class="fas fa-praying-hands" id="lifestyle"></i></span>
+                                <span id="lifestyle" class="praying-hands praying-handsx rooms-temp">Lifestyle</span>
+                            </div>
+                        </div>
+                       
+                    </div>
+    
+                    <div class="bottom-area">
+                        <div class="logout-icon"> 
+                            <span class="logout" id="logout">Log out</span>
+                            <span><i class="fas fa-sign-out-alt"></i></span>
+                        </div>
+                        <div class="light-mode">
+                            <span><i class="fas fa-lightbulb"></i></span>
+                        </div>
+                        <div class="dark-mode">
+                            <span><i class="fas fa-moon"></i></span>
+                        </div>
+                    </div>
+                        
+                </div>    
+            </div>
+    
+    
+    
+    
+    
+            
+            <div class="container main-page my-4">
+    
+                
+                <form class="new-name my-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control rexit" id="name" placeholder="Update username" required>
+                        <div class="input-group-append">
+                            <p class="alt-x">Change display name</p>
+                            <input type="submit" class="btn rexitx" value="confirm">
+                        </div>
+                    </div>
+                    <div class="update-mssg"></div>
+                </form>
+    
+                <div class="name-logo text-center my-3 main-page-logo">
+                    <span class="text-center my-3 mx-auto site-name">Converse</span>
+                    <span class="iconx"><i class="fas fa-comment-dots"></i></span>
+                </div>
+                
+                <div class="name-logo text-center my-3 main-page-logo-alt">
+                    <span class="text-center my-3 mx-auto site-name-alt">Converse</span>
+                    <span class=""><i class="fas fa-comment-dots fa-comment-dots-alt"></i></span>
+                </div>  
+            
+            
+                <div class="chat-rooms mb-3 text-center">
+                    <div class="my-2 instruction"></div><br>
+                    <button class="btn default-room" id="general">General</button>
+                    <button class="btn room-btn sports" id="sports">Sports</button>
+                    <button class="btn room-btn gaming" id="gaming">Gaming</button>
+                    <button class="btn room-btn song bottom-btn" id="music">Music</button>
+                    <button class="btn room-btn lifestyle bottom-btn" id="lifestyle">Lifestyle</button>
+                   
+                   
+                </div>
+    
+            
+                <div class="chat-window">
+                    <ul class="chat-list list-group"></ul>
+                </div>
+    
+        
+                <form class="new-chat my-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="message" placeholder="Your message" required>
+                        <div class="input-group-append">
+                            <input type="submit" class="btn" value="send">
+                        </div>
+                    </div>
+                    
+                </form>
+    
+                <div class="scroll-to"></div>
+    
+            
+    
+            </div>
+    
+
+        </div>
+
+
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+        <script>
+            var firebaseConfig = {
+                apiKey: "AIzaSyDb6_a03x-neFW03EYImuiFpekbmpUVCVQ",
+                authDomain: "realtime-chatroom-23e2b.firebaseapp.com",
+                databaseURL: "https://realtime-chatroom-23e2b.firebaseio.com",
+                projectId: "realtime-chatroom-23e2b",
+                storageBucket: "realtime-chatroom-23e2b.appspot.com",
+                messagingSenderId: "856591324753",
+                appId: "1:856591324753:web:1d8f916860e224c5bd4a70",
+                measurementId: "G-9WH8PC8TRF"
+            };
+            
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+            const auth = firebase.auth();
+            const db = firebase.firestore();
+        </script>
+
+        <script src="scripts/chatroom.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/index.js"></script>
+        <script src="scripts/ui.js"></script>
+    </body>
+</html>

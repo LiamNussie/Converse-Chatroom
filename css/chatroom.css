@@ -1,0 +1,643 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: #352f5b;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+}
+.main-page {
+    max-width: 1200px;
+}
+.slide-bar {
+    background-color: #161235;
+    max-width: 350px;
+    height: 100vh;
+    position: fixed;
+}
+.slider-wrapper {
+    background: rgba(17, 22, 63, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition-property: all;
+    transition-duration: 1s;
+    opacity: 0;
+}
+
+.fa-user {
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
+.slider-close {
+    margin-left: 96%;
+    margin-top: 7px;
+}
+.fa-times {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.nav-bar {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.profile-name {
+    color: white;
+}
+.top-area {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(65, 64, 64);
+    
+}
+.general-line,
+.room-line,
+.sports-line,
+.music-line,
+.gaming-line,
+.lifestyle-line {
+    padding-top: 15px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+.general-line,
+.sports-line,
+.music-line,
+.gaming-line,
+.lifestyle-line {
+    margin-left: 60px;
+    cursor: pointer;
+}
+.room-line {
+    cursor: auto;
+}
+.general-line:hover,
+.sports-line:hover,
+.music-line:hover,
+.gaming-line:hover,
+.lifestyle-line:hover,
+.logout-icon:hover {
+    color: rgb(219, 171, 66);
+}
+.fa-users,
+.fa-globe,
+.fa-futbol,
+.fa-music,
+.fa-gamepad,
+.fa-praying-hands,
+.fa-bars {
+    font-size: 1.5em;
+    position: fixed;
+}
+.fa-globe:hover,
+.fa-futbol:hover,
+.fa-music:hover,
+.fa-gamepad:hover,
+.fa-praying-hands:hover,
+.fa-sign-out-alt:hover,
+.fa-lightbulb:hover,
+.fa-moon:hover,
+.fa-bars:hover,
+.fa-times:hover,
+.default-room:hover {
+    color: rgb(219, 171, 66);
+}
+
+.middle-area {
+    border-bottom: 1px solid rgb(65, 64, 64);
+}
+.rooms-temp {
+    margin-left: 35px;
+}
+.bottom-area {
+    display: flex;
+    float: left;
+    color: white;
+    margin-top: 80px;
+}
+.logout-icon {
+    cursor: pointer;
+    margin-right: 220px;
+}
+.fa-sign-out-alt,
+.fa-lightbulb,
+.fa-moon {
+    font-size: 1.0em;
+}
+.fa-lightbulb,
+.fa-bars,
+.fa-moon {
+    cursor: pointer;
+}
+.fa-moon {
+    display: none;
+}
+i {
+    color: white;
+    font-size: 3.0em;
+}
+h1 {
+    color: white;
+}
+.site-name {
+    margin-top: -50px;
+    color: white;
+    font-size: 3.0em;
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+
+.btn {
+    background: #626274 !important;
+    color: white;
+    outline: none !important;
+    box-shadow: none !important;
+}
+#general,
+#sports,
+#music,
+#gaming,
+#lifestyle {
+    border-radius: 20px;
+    padding: 2px 30px 5px 30px;
+}
+.btn:focus {
+    outline: none !important;
+}
+.sports,
+.gaming,
+.song,
+.lifestyle {
+    display: none;
+    margin: auto;
+}
+.default-room {
+    margin: auto;
+}
+h1,
+.instruction {
+    color: white;
+}
+.username {
+    font-weight: bold;
+    color: rgb(219, 171, 66);
+
+}
+.message {
+    color: white;
+    overflow-wrap: break-word;
+}
+.time {
+    position: absolute;
+    font-size: 0.6em;
+    color: #999;
+    bottom: 0;
+    right: 0;
+    
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+.update-mssg {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+}
+.highlight {
+    background-color: rgb(97, 97, 202);
+}
+.scroll-btns {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.fa-arrow-up,
+.fa-arrow-down {
+    font-size: 1em;
+    line-height: 1.5;
+    background-color: #626274;
+    opacity: .8;
+    padding: 2px 8px;
+    border-radius: 50%;
+    animation: fadeBounce2 1.5s linear 1;
+}
+.fa-arrow-down {
+    margin-top: 5px;
+}
+
+.space {
+    background-color: #626274;
+    border: none;
+}
+
+.chat-bubble {
+    position: relative;
+    background-color: #161235;
+    padding: 3px 0 10px 10px;
+    border-radius: 15px 15px 0 15px;
+}
+
+/* @media only screen and (min-width: 480px) {
+    .slide-bar {
+        display: block;
+    }
+} */
+
+@media only screen and (max-width: 510px) {
+    .main-page {
+        max-width: 410px;
+    }
+}
+
+
+@keyframes fadeBounce {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-500%);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    55% {
+        transform: translateX(-10px);
+    }
+
+    70% {
+        transform: translateX(0);
+    }
+
+    85% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeBounce2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes buttonPress {
+    0% {
+        transform: scale(.5);
+    }
+    20% {
+
+    }
+    40% {
+
+    }
+    60% {
+
+    }
+    80% {
+
+    }
+    100% {
+        transform: scale(.5);
+    }
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(-1000%);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    55% {
+        transform: translateX(-10px);
+    }
+
+    70% {
+        transform: translateX(0);
+    }
+
+    85% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideOut {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: .5;
+        transform: translateX(-500%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-1000%);
+    }
+}
+
+
+.name-logo {
+    animation: fadeBounce2 1.5s linear 1;
+}
+.rexit {
+    transform: translateX(-1000%);
+}
+
+.default-room,
+.room-btn {
+    animation-name: fadeBounce;
+    animation-duration: 1s;
+}
+.rexitx {
+    display: none;
+}
+.alt-x {
+    background: #626274;
+    color: white;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 15px;
+    padding: 2px 7px 3px 7px;
+    cursor: pointer;
+    animation: fadeBounce2 1.5s linear 1;
+}
+.alt-x:focus {
+    outline: none !important;
+}
+.alt-x:hover {
+    color: rgb(219, 171, 66);
+}
+
+
+
+
+/* THIS IS STYLING FOR FORM AREA */
+
+/* body {
+    background: #352f5b;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+}
+.container {
+    max-width: 400px;
+    text-align: center;
+    
+} */
+/* .site-namex {
+    margin-top: -50px;
+    color: white;
+    font-size: 3.0em;
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+}  */
+
+/* i {
+    color: white;
+    font-size: 3.0em;
+} */
+
+.login-boxx,
+.signup-boxx {
+    background: rgba(250, 250, 250, 0.7);
+    padding: 20px 15px 10px 15px;
+    border-radius: 15px;
+    margin: auto;
+    text-align: center;
+    max-width: 400px;
+    
+}
+.field1 {
+    padding-bottom: 20px;
+}
+
+.fa-lock,
+.fa-user-alt {
+    font-size: 1em;
+    padding: 11px 10px 11px 0;
+    background: rgb(85, 85, 85);
+    color: rgba(250, 250, 250,);
+}
+
+input[type="email"],
+input[type="password"] {
+    padding-right: 140px;
+    border-radius: 0;
+    background: rgb(85, 85, 85);
+    color: white;
+    border: none;  
+}
+input[type="email"] {
+    padding-right: 138px;
+}
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-radius: 0;
+    background: rgb(85, 85, 85);
+    color: white;
+    border: none;
+}
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: white;
+    font-size: 12px;
+    opacity: .7;
+}
+.login-btnx {
+    background-color: #98989e !important;
+    color: black !important;
+    padding: 5px 120px !important;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border-radius: 0 !important;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.signup-btnx {
+    background-color: #98989e !important;
+    color: black !important;
+    padding: 9px 100px 7px 100px;
+    font-size: 13px;
+    border-radius: 0 0 10px 10px ;
+    margin-top: 3px;
+}
+.forgotx {
+    font-size: 12px;
+}
+.btn {
+    background:rgba(156, 102, 102, 0.5);
+    color: white;
+    outline: none !important;
+    box-shadow: none !important;
+}
+@keyframes fadeBounce2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideIn2 {
+    0% {
+        transform: translate(200%, -124%);
+    }
+    40% {
+        transform: translate(0, -124%);
+    }
+    55% {
+        transform: translate(10px, -124%);
+    }
+    70% {
+        transform: translate(0, -124%);
+    }
+    85% {
+        transform: translate(5px, -124%);
+    }
+    100% {
+        transform: translate(0, -124%);
+    }
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    55% {
+        transform: translateX(-10px);
+    }
+
+    70% {
+        transform: translateX(0);
+    }
+
+    85% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideOut2 {
+    0% {
+        transform: translate(0, -124%);
+    }
+    35% {
+        transform: translate(200%, -124%);
+    }
+    70% { 
+        transform: translate(350%, -124%);
+    }
+    100% {
+        transform: translate(500%, -124%);
+    }
+}
+
+
+@keyframes slideOut {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: .5;
+        transform: translateX(-500%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-1000%);
+    }
+}
+.name-logo {
+    animation: fadeBounce2 1.5s linear 1;
+}
+.signup-window {
+    transform: translate(500%, -124%);
+}
+
+
+.forms {
+    /* display: none; */
+    margin: auto;
+    text-align: center;
+}
+
+.home-page {
+    display: none;
+}
+.login-error {
+    display: none;
+    margin-top: 15px;
+    color: crimson;
+}
+.login-btnx:hover,
+.signup-btnx:hover {
+    background-color: rgb(131, 131, 131) !important;
+    color: white !important;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.fa-circle {
+    font-size: .3em;
+    color: rgb(2, 187, 2);
+}
+.prof-mail {
+    color: white;
+}
+.main-page-logo {
+    display: block;
+}
+.main-page-logo-alt {
+    display: none;
+    color: #352f5b !important;
+    font-size: 3.0em;
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+.fa-comment-dots-alt {
+    font-size: 1.0em;
+    color: #352f5b;
+}
+.site-name-alt {
+    
+}
